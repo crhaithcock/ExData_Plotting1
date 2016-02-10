@@ -2,7 +2,7 @@
 # Assumes working directory has the expected dataset
 
 
- df.load <- read.csv("exdata-data-household_power_consumption/household_power_consumption.txt",sep=";", stringsAsFactors = FALSE)
+ df.load <- read.csv("household_power_consumption.txt",sep=";", stringsAsFactors = FALSE)
  df.load$Date <-as.Date(df.load$Date, "%d/%m/%Y")
  
  df.subset <- subset(df.load,Date>='2007-02-01' & Date <='2007-02-02' )
